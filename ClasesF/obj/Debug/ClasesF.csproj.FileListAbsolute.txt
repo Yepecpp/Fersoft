@@ -1,0 +1,68 @@
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\ClasesF.dll.config
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\ClasesF.dll
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\ClasesF.pdb
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.dll
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.SqlServer.dll
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.xml
+D:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.SqlServer.xml
+D:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CoreCompileInputs.cache
+D:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CopyComplete
+D:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.dll
+D:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.pdb
+D:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.AssemblyReference.cache
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\ClasesF.dll.config
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\ClasesF.dll
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\ClasesF.pdb
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.dll
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.SqlServer.dll
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.xml
+E:\proyectos personales\c#\Ferreteria\ClasesF\bin\Debug\EntityFramework.SqlServer.xml
+E:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.AssemblyReference.cache
+E:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CoreCompileInputs.cache
+E:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CopyComplete
+E:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.dll
+E:\proyectos personales\c#\Ferreteria\ClasesF\obj\Debug\ClasesF.pdb
+D:\Ferreteria\ClasesF\bin\Debug\ClasesF.dll.config
+D:\Ferreteria\ClasesF\bin\Debug\ClasesF.dll
+D:\Ferreteria\ClasesF\bin\Debug\ClasesF.pdb
+D:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.AssemblyReference.cache
+D:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CoreCompileInputs.cache
+D:\Ferreteria\ClasesF\obj\Debug\ClasesF.dll
+D:\Ferreteria\ClasesF\obj\Debug\ClasesF.pdb
+F:\Ferreteria\ClasesF\bin\Debug\ClasesF.dll.config
+F:\Ferreteria\ClasesF\bin\Debug\ClasesF.dll
+F:\Ferreteria\ClasesF\bin\Debug\ClasesF.pdb
+F:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.AssemblyReference.cache
+F:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CoreCompileInputs.cache
+F:\Ferreteria\ClasesF\obj\Debug\ClasesF.dll
+F:\Ferreteria\ClasesF\obj\Debug\ClasesF.pdb
+E:\Ferreteria\ClasesF\bin\Debug\ClasesF.dll.config
+E:\Ferreteria\ClasesF\bin\Debug\ClasesF.dll
+E:\Ferreteria\ClasesF\bin\Debug\ClasesF.pdb
+E:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.AssemblyReference.cache
+E:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CoreCompileInputs.cache
+E:\Ferreteria\ClasesF\obj\Debug\ClasesF.dll
+E:\Ferreteria\ClasesF\obj\Debug\ClasesF.pdb
+F:\Ferreteria\ClasesF\bin\Debug\BouncyCastle.Crypto.dll
+F:\Ferreteria\ClasesF\bin\Debug\Google.Protobuf.dll
+F:\Ferreteria\ClasesF\bin\Debug\K4os.Compression.LZ4.dll
+F:\Ferreteria\ClasesF\bin\Debug\K4os.Compression.LZ4.Streams.dll
+F:\Ferreteria\ClasesF\bin\Debug\K4os.Hash.xxHash.dll
+F:\Ferreteria\ClasesF\bin\Debug\MySql.Data.dll
+F:\Ferreteria\ClasesF\bin\Debug\System.Buffers.dll
+F:\Ferreteria\ClasesF\bin\Debug\System.Memory.dll
+F:\Ferreteria\ClasesF\bin\Debug\System.Numerics.Vectors.dll
+F:\Ferreteria\ClasesF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\Ferreteria\ClasesF\bin\Debug\Ubiety.Dns.Core.dll
+F:\Ferreteria\ClasesF\bin\Debug\ZstdNet.dll
+F:\Ferreteria\ClasesF\bin\Debug\Google.Protobuf.pdb
+F:\Ferreteria\ClasesF\bin\Debug\Google.Protobuf.xml
+F:\Ferreteria\ClasesF\bin\Debug\K4os.Compression.LZ4.xml
+F:\Ferreteria\ClasesF\bin\Debug\K4os.Compression.LZ4.Streams.xml
+F:\Ferreteria\ClasesF\bin\Debug\K4os.Hash.xxHash.xml
+F:\Ferreteria\ClasesF\bin\Debug\MySql.Data.xml
+F:\Ferreteria\ClasesF\bin\Debug\System.Buffers.xml
+F:\Ferreteria\ClasesF\bin\Debug\System.Memory.xml
+F:\Ferreteria\ClasesF\bin\Debug\System.Numerics.Vectors.xml
+F:\Ferreteria\ClasesF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Ferreteria\ClasesF\obj\Debug\ClasesF.csproj.CopyComplete
