@@ -33,12 +33,6 @@
             this.TBPass = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.Label_ID = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.KDataGrid = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.ButtonUpdate = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.B_UP = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.ButtonInsert = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.TB_ID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TB_S = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.B_C = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.iDempDataGridViewTextBoxColumn = new ComponentFactory.Krypton.Toolkit.KryptonDataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.puestoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +40,12 @@
             this.depDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ButtonUpdate = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.B_UP = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.ButtonInsert = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.TB_ID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TB_S = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.B_C = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.CBRol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cUsuarioBindingSource)).BeginInit();
@@ -60,6 +60,7 @@
             this.CBRol.Size = new System.Drawing.Size(121, 21);
             this.CBRol.TabIndex = 25;
             this.CBRol.Text = "Rol";
+            this.CBRol.Visible = false;
             // 
             // TBPass
             // 
@@ -105,6 +106,54 @@
             this.KDataGrid.Size = new System.Drawing.Size(1091, 170);
             this.KDataGrid.TabIndex = 27;
             this.KDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KDataGrid_CellClick);
+            // 
+            // iDempDataGridViewTextBoxColumn
+            // 
+            this.iDempDataGridViewTextBoxColumn.DataPropertyName = "ID_emp";
+            this.iDempDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDempDataGridViewTextBoxColumn.Name = "iDempDataGridViewTextBoxColumn";
+            this.iDempDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDempDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iDempDataGridViewTextBoxColumn.Width = 182;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // puestoDataGridViewTextBoxColumn
+            // 
+            this.puestoDataGridViewTextBoxColumn.DataPropertyName = "Puesto";
+            this.puestoDataGridViewTextBoxColumn.HeaderText = "Puesto";
+            this.puestoDataGridViewTextBoxColumn.Name = "puestoDataGridViewTextBoxColumn";
+            this.puestoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cedulaDataGridViewTextBoxColumn
+            // 
+            this.cedulaDataGridViewTextBoxColumn.DataPropertyName = "Cedula";
+            this.cedulaDataGridViewTextBoxColumn.HeaderText = "Cedula";
+            this.cedulaDataGridViewTextBoxColumn.Name = "cedulaDataGridViewTextBoxColumn";
+            this.cedulaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // depDataGridViewTextBoxColumn
+            // 
+            this.depDataGridViewTextBoxColumn.DataPropertyName = "Dep";
+            this.depDataGridViewTextBoxColumn.HeaderText = "Departamento";
+            this.depDataGridViewTextBoxColumn.Name = "depDataGridViewTextBoxColumn";
+            this.depDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rolDataGridViewTextBoxColumn
+            // 
+            this.rolDataGridViewTextBoxColumn.DataPropertyName = "Rol";
+            this.rolDataGridViewTextBoxColumn.HeaderText = "Rol";
+            this.rolDataGridViewTextBoxColumn.Name = "rolDataGridViewTextBoxColumn";
+            this.rolDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cUsuarioBindingSource
+            // 
+            this.cUsuarioBindingSource.DataSource = typeof(ClasesF.Clases_Nom.C_Usuario);
             // 
             // ButtonUpdate
             // 
@@ -183,54 +232,6 @@
             this.B_C.Values.Text = "Cancelar";
             this.B_C.Visible = false;
             this.B_C.Click += new System.EventHandler(this.B_C_Click);
-            // 
-            // iDempDataGridViewTextBoxColumn
-            // 
-            this.iDempDataGridViewTextBoxColumn.DataPropertyName = "ID_emp";
-            this.iDempDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDempDataGridViewTextBoxColumn.Name = "iDempDataGridViewTextBoxColumn";
-            this.iDempDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDempDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.iDempDataGridViewTextBoxColumn.Width = 182;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // puestoDataGridViewTextBoxColumn
-            // 
-            this.puestoDataGridViewTextBoxColumn.DataPropertyName = "Puesto";
-            this.puestoDataGridViewTextBoxColumn.HeaderText = "Puesto";
-            this.puestoDataGridViewTextBoxColumn.Name = "puestoDataGridViewTextBoxColumn";
-            this.puestoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cedulaDataGridViewTextBoxColumn
-            // 
-            this.cedulaDataGridViewTextBoxColumn.DataPropertyName = "Cedula";
-            this.cedulaDataGridViewTextBoxColumn.HeaderText = "Cedula";
-            this.cedulaDataGridViewTextBoxColumn.Name = "cedulaDataGridViewTextBoxColumn";
-            this.cedulaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // depDataGridViewTextBoxColumn
-            // 
-            this.depDataGridViewTextBoxColumn.DataPropertyName = "Dep";
-            this.depDataGridViewTextBoxColumn.HeaderText = "Departamento";
-            this.depDataGridViewTextBoxColumn.Name = "depDataGridViewTextBoxColumn";
-            this.depDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // rolDataGridViewTextBoxColumn
-            // 
-            this.rolDataGridViewTextBoxColumn.DataPropertyName = "Rol";
-            this.rolDataGridViewTextBoxColumn.HeaderText = "Rol";
-            this.rolDataGridViewTextBoxColumn.Name = "rolDataGridViewTextBoxColumn";
-            this.rolDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cUsuarioBindingSource
-            // 
-            this.cUsuarioBindingSource.DataSource = typeof(ClasesF.Clases_Nom.C_Usuario);
             // 
             // FormUsuarios
             // 

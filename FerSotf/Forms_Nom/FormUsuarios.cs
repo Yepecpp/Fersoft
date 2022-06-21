@@ -52,6 +52,7 @@ namespace FerSotf.Forms_Nom
                 B_C.Visible = false;
                 KDataGrid.DataSource = C_Usuario.UpdateUsu(int.Parse(TB_ID.Text), CBRol.SelectedIndex.ToString());
                 busy = false;
+                CBRol.Visible = false;
             }
         }
 
@@ -73,6 +74,8 @@ namespace FerSotf.Forms_Nom
                 this.Controls.OfType<KryptonButton>().All(button => button.Enabled = true);
                 B_C.Visible = false;
                 busy = false;
+                TBPass.Visible = false;
+
             }
         }
 
@@ -81,6 +84,8 @@ namespace FerSotf.Forms_Nom
             this.Controls.OfType<KryptonButton>().All(button => button.Enabled = true);
             busy = false;
             B_C.Visible = false;
+            CBRol.Visible = false;
+            TBPass.Visible = false;
         }
 
         private void KDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -97,14 +102,14 @@ namespace FerSotf.Forms_Nom
         }
         private void TB_ID_TextChanged(object sender, EventArgs e)
         {
-            if (TB_ID.Text.All(char.IsNumber))
+            if (TB_ID.Text.All(char.IsNumber) && TB_ID.Text!="")
             {
                 if (DTS(int.Parse(TB_ID.Text)))
                 {
                     TB_ID.Tag = "Valid";
                 }else TB_ID.Tag = "Invalid";
             }
-            else { TB_ID.Tag = "Invalid"; MessageBox.Show("Ingrese un ID, numeros sin letras");}
+            else { TB_ID.Tag = "Invalid";}
         }
 
         private void ButtonInsert_Click(object sender, EventArgs e)
@@ -121,6 +126,7 @@ namespace FerSotf.Forms_Nom
             else
             {
                 if (TB_ID.Tag.ToString() != "Valid") { MessageBox.Show("Ingrese el id del empleado que cambiara su contraseña"); return; }
+                if (C_Usuario.CargarUsu(TB_ID.Text).Count > 0) { MessageBox.Show("El id ya existe"); return; }
                 KDataGrid.DataSource = C_Usuario.InUsu(int.Parse(TB_ID.Text), (Int16)CBRol.SelectedIndex,TBPass.Text);
                 this.Controls.OfType<KryptonButton>().All(button => button.Enabled = true);
                 B_C.Visible = false;

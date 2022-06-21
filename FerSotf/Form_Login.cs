@@ -21,7 +21,12 @@ namespace FerSotf
         public C_Usuario emp{ get; private set; }
         private void Form_Login_Load(object sender, EventArgs e)
         {
-        //    Clipboard.SetText(Encrypt.GetSHA256("2705"));
+         if (! ClasesF.ConnectionDB.TestCon())
+            {
+                MessageBox.Show("No se pudo conectar a el servidor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
+            LoginS("1", "2507");
         }
         public bool logged { get; private set; }
         private void Button_Log_Click(object sender, EventArgs e)

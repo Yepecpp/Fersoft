@@ -53,10 +53,10 @@ namespace ClasesF.Clases_Nom
             cmd.CommandText = "SP_DepU";
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
-            cmd.Parameters.Add("@Nombre", MySqlDbType.String,25).Value = Nombre;
-            cmd.Parameters.Add("@Ubicacion",MySqlDbType.String,60).Value=Ubicacion;
-            cmd.Parameters.Add("Telefono",MySqlDbType.String,20).Value = Telefono;
-            cmd.Parameters.Add("@Id_Suc", MySqlDbType.Int32).Value = Id_Suc;
+            cmd.Parameters.Add("@Nombrev", MySqlDbType.String,25).Value = Nombre;
+            cmd.Parameters.Add("@Ubicacionv",MySqlDbType.String,60).Value=Ubicacion;
+            cmd.Parameters.Add("Telefonov",MySqlDbType.String,20).Value = Telefono;
+            cmd.Parameters.Add("@Id_Sucv", MySqlDbType.Int32).Value = Id_Suc;
             cmd.ExecuteNonQuery();
             Con.Close();
             return id;

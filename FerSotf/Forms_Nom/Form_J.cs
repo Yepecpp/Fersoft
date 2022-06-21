@@ -42,6 +42,13 @@ namespace FerSotf.Forms_Nom
 
         private void TB_ID_TextChanged(object sender, EventArgs e)
         {
+            if (TB_ID.Text == "")
+            {
+                TB_ID.StateCommon.Border.Color1 = Color.Red;
+                TB_ID.StateCommon.Border.Color2 = Color.Red;
+                TB_ID.Tag = "Invalid";
+                return;
+            }
            if (!C_Jor.LogEmpleado(TB_ID.Text)) {
                 TB_ID.StateCommon.Border.Color1 = Color.Red;
                 TB_ID.StateCommon.Border.Color2 = Color.Red;

@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases_Inv\C_Inv.cs" />
+    <Compile Include="Clases_Inv\C_Prov.cs" />
     <Compile Include="Clases_Nom\C_Dep.cs" />
     <Compile Include="Clases_Nom\C_Empleados.cs" />
     <Compile Include="Clases_Nom\C_Empresas.cs" />

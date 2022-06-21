@@ -109,7 +109,7 @@ namespace ClasesF.Clases_Nom
             DateTime dt = DateTime.Now;
             Con.Open();
             MySqlCommand cmd = Con.CreateCommand();
-            cmd.CommandText = "select top 1 v.Fecha from V_N_Nomina V order by V.Fecha asc";
+            cmd.CommandText = "select v.Fecha from V_N_Nomina V order by V.Fecha asc limit 1";
             cmd.CommandType = CommandType.Text;
            MySqlDataReader Dr = cmd.ExecuteReader();
             while (Dr.Read())
@@ -125,7 +125,7 @@ namespace ClasesF.Clases_Nom
             MySqlConnection Cond = ConnectionDB.GetConnection();
             V_EmpED ls = null;
             MySqlCommand cmd = Cond.CreateCommand();
-            cmd.CommandText = "select * from N_V_EmpED  E where @str = E.Cedula or CONVERT(nvarchar, E.ID_E)=@str";
+            cmd.CommandText = "select * from N_V_EmpED  E where @str = E.Cedula or CONVERT(E.ID_E, nchar)=@str";
             cmd.Parameters.Add("@str", MySqlDbType.String, 25).Value = id;
             cmd.CommandType = CommandType.Text;
             Cond.Open();

@@ -25,8 +25,8 @@ namespace FerSotf
             Signalpanel.MaximumSize = new Size(kryptonPanel1.Width, 5);
             normalpz = kryptonPanel1.Size;
             CEmp = emp;
-            Label_info.Text = $"{CEmp.Nombre}, ({CEmp.Puesto}) ";
-            Label_Rol.Text = $"{CEmp.Rol.ToString()}";
+            infoLabel.Text = $"{CEmp.Nombre}, ({CEmp.Puesto}) ";
+            RolLabel.Text = $"{CEmp.Rol.ToString()}";
         }
         #region designform
         Size normalpz;
@@ -42,7 +42,6 @@ namespace FerSotf
         }
         private void AdjustForm() {
             Signalpanel.MaximumSize = new Size(kryptonPanel1.Width, 5);
-            normalpz= kryptonPanel1.Size;
             if (Actual!=null) Actual.Size = kryptonPanel2.Size;
             MoveSignal(Currnt[0], Currnt[1]);
         }
@@ -83,32 +82,56 @@ namespace FerSotf
         bool aydio=true;
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            var sss2 = pictureBox4.Size;
+            Size sss2 = pictureBox4.Size;
             if (aydio)
             {
-                foreach (Control c in kryptonPanel1.Controls)
-                {
-                    if (c!=sender as Control)
-                    c.Visible = false;
-                }
+                
                 normalpz = kryptonPanel1.Size;
                 kryptonPanel1.Size = new Size(pictureBox4.Size.Width+5, kryptonPanel1.Height);
                 kryptonPanel2.Size = new Size(kryptonPanel2.Width + (normalpz.Width - kryptonPanel1.Width), kryptonPanel2.Height + (normalpz.Height - kryptonPanel1.Height));
                 pictureBox4.Image = Properties.Resources.FoldMenu;
                 aydio=false;
-               
+                foreach (Control c in kryptonPanel1.Controls)
+                {
+                    if (!c.Name.Contains("pictureBox"))
+                    {
+                       
+                        c.Visible = false;
+                    }
+                    else
+                    {
+                        c.Size = sss2;
+                        c.Left = pictureBox4.Left;
+                    }
+                }
             }
             else 
             {
-                foreach (Control c in kryptonPanel1.Controls)
-                {
-                    c.Visible = true;
-                }
+               
                 kryptonPanel2.Size = new Size(kryptonPanel2.Width-normalpz.Width , kryptonPanel2.Height- normalpz.Height);
                 kryptonPanel1.Size = normalpz;
                aydio = true;
                pictureBox4.Image = (Bitmap)Properties.Resources.FullMenu;
-                
+                pictureBox4.Size = sss2;
+                foreach (Control c in kryptonPanel1.Controls)
+                {
+                    if (c.Visible == true)
+                    {
+                        c.Size = sss2;
+                        c.Left = pictureBox4.Left;
+                    }
+                    else
+                    {
+                        c.Visible = true;
+                        if (c.Name.Contains("Label_"))
+                        {
+                            
+                            c.Left = pictureBox4.Right;
+                            Console.WriteLine(c.Name + " " + c.Width + " c: " + kryptonPanel1.Width + " " + c.Left);
+                        }
+                      
+                    }
+                }
             }
             pictureBox4.Size = sss2;
         }
@@ -128,12 +151,7 @@ namespace FerSotf
         private void Label_Nomina_Click(object sender, EventArgs e)
         {
             MoveSignal(pictureBox7 as Control, sender as Control);
-            var xsw = new FormPadre_Nomina(CEmp);
-            this.Hide();
-            xsw.WindowState=this.WindowState;
-            xsw.Size = this.Size;
-            xsw.ShowDialog();
-            this.Show();
+            AbrirFrom(new FormPadre_Nomina(CEmp));
         }
 
         private void Label_Acerca_Click(object sender, EventArgs e)
@@ -154,17 +172,46 @@ namespace FerSotf
         }
 
         #endregion
-
-        private void kryptonLabel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             reauth = true;
             this.Close();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            MoveSignal(pictureBox7 as Control, sender as Control);
+            AbrirFrom(new FormPadre_Nomina(CEmp));
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            MoveSignal(pictureBox9, sender as Control);
+            AbrirFrom(new Form_Factura());
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MoveSignal(pictureBox6 as Control, sender as Control);
+            AbrirFrom(new Form_Proveedor());
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MoveSignal(pictureBox2 as Control, sender as Control);
+            AbrirFrom(new Form_Clientes());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MoveSignal(pictureBox1 as Control, sender as Control);
+            AbrirFrom(new Form_Inventario());
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MoveSignal(pictureBox5 as Control, sender as Control);
+            AbrirFrom(new Form_Dashboard());
         }
     }
 }

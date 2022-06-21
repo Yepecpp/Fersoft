@@ -52,28 +52,6 @@ namespace FerSotf
         {
             if (Actual != null) { Actual.Size = kryptonPanel2.Size; }
         }
-        bool gout= false;
-        private void FormPadre_Nomina_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (gout==true) return;
-            DialogResult ss;
-            ss = MessageBox.Show("¿Desea cerrar el programa por completo o solo la nomina?", "Esta Cerrando el formulario", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if ( ss== DialogResult.Yes)
-            {
-                gout = true;
-                Application.Exit(); } else { 
-               if (Actual != null)  
-                Actual.Close();
-                gout = true;
-                this.Close();
-
-            }
-            
-        }
-
-        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
 
         private void nominaToolStripMenuItem_Click(object sender, EventArgs e)
         {

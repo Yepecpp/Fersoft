@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPadre));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.Label_Rol = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.Label_info = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.pictureExit = new System.Windows.Forms.PictureBox();
+            this.RolLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.infoLabel = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.Label_Factura = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.Label_Inicio = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Label_Cliente = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.Signalpanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -56,14 +56,14 @@
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Signalpanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,9 +72,9 @@
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Controls.Add(this.pictureBox10);
-            this.kryptonPanel1.Controls.Add(this.Label_Rol);
-            this.kryptonPanel1.Controls.Add(this.Label_info);
+            this.kryptonPanel1.Controls.Add(this.pictureExit);
+            this.kryptonPanel1.Controls.Add(this.RolLabel);
+            this.kryptonPanel1.Controls.Add(this.infoLabel);
             this.kryptonPanel1.Controls.Add(this.pictureBox9);
             this.kryptonPanel1.Controls.Add(this.Label_Factura);
             this.kryptonPanel1.Controls.Add(this.pictureBox8);
@@ -87,7 +87,7 @@
             this.kryptonPanel1.Controls.Add(this.pictureBox5);
             this.kryptonPanel1.Controls.Add(this.Label_Inicio);
             this.kryptonPanel1.Controls.Add(this.pictureBox4);
-            this.kryptonPanel1.Controls.Add(this.pictureBox3);
+            this.kryptonPanel1.Controls.Add(this.pictureLogo);
             this.kryptonPanel1.Controls.Add(this.pictureBox2);
             this.kryptonPanel1.Controls.Add(this.Label_Cliente);
             this.kryptonPanel1.Controls.Add(this.Signalpanel);
@@ -99,58 +99,58 @@
             this.kryptonPanel1.Palette = this.kryptonPalette1;
             this.kryptonPanel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.TabDock;
-            this.kryptonPanel1.Size = new System.Drawing.Size(181, 749);
+            this.kryptonPanel1.Size = new System.Drawing.Size(189, 749);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.White;
+            this.kryptonPanel1.StateCommon.Color2 = System.Drawing.Color.DimGray;
             this.kryptonPanel1.StateCommon.ColorAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
             this.kryptonPanel1.StateCommon.ColorAngle = 70F;
             this.kryptonPanel1.StateCommon.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Switch33;
             this.kryptonPanel1.StateCommon.ImageAlign = ComponentFactory.Krypton.Toolkit.PaletteRectangleAlign.Local;
             this.kryptonPanel1.TabIndex = 0;
             // 
-            // pictureBox10
+            // pictureExit
             // 
-            this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pictureExit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = global::FerSotf.Properties.Resources.logout;
-            this.pictureBox10.Location = new System.Drawing.Point(140, 3);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(41, 37);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 21;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            this.pictureExit.BackColor = System.Drawing.Color.Transparent;
+            this.pictureExit.Image = global::FerSotf.Properties.Resources.logout;
+            this.pictureExit.Location = new System.Drawing.Point(151, 3);
+            this.pictureExit.Name = "pictureExit";
+            this.pictureExit.Size = new System.Drawing.Size(38, 37);
+            this.pictureExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureExit.TabIndex = 21;
+            this.pictureExit.TabStop = false;
+            this.pictureExit.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // Label_Rol
+            // RolLabel
             // 
-            this.Label_Rol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RolLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label_Rol.AutoSize = false;
-            this.Label_Rol.Location = new System.Drawing.Point(34, 214);
-            this.Label_Rol.Margin = new System.Windows.Forms.Padding(0);
-            this.Label_Rol.Name = "Label_Rol";
-            this.Label_Rol.Size = new System.Drawing.Size(89, 27);
-            this.Label_Rol.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.Label_Rol.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
-            this.Label_Rol.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Rol.TabIndex = 20;
-            this.Label_Rol.Values.Text = "s";
+            this.RolLabel.AutoSize = false;
+            this.RolLabel.Location = new System.Drawing.Point(34, 214);
+            this.RolLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.RolLabel.Name = "RolLabel";
+            this.RolLabel.Size = new System.Drawing.Size(97, 27);
+            this.RolLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.RolLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
+            this.RolLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RolLabel.TabIndex = 20;
+            this.RolLabel.Values.Text = "s";
             // 
-            // Label_info
+            // infoLabel
             // 
-            this.Label_info.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.infoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label_info.AutoSize = false;
-            this.Label_info.Location = new System.Drawing.Point(3, 164);
-            this.Label_info.Margin = new System.Windows.Forms.Padding(0);
-            this.Label_info.Name = "Label_info";
-            this.Label_info.Size = new System.Drawing.Size(166, 47);
-            this.Label_info.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
-            this.Label_info.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
-            this.Label_info.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_info.TabIndex = 18;
-            this.Label_info.Values.Text = "s";
+            this.infoLabel.AutoSize = false;
+            this.infoLabel.Location = new System.Drawing.Point(3, 167);
+            this.infoLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.infoLabel.Name = "infoLabel";
+            this.infoLabel.Size = new System.Drawing.Size(174, 47);
+            this.infoLabel.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
+            this.infoLabel.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
+            this.infoLabel.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoLabel.TabIndex = 18;
+            this.infoLabel.Values.Text = "s";
             // 
             // pictureBox9
             // 
@@ -159,19 +159,20 @@
             this.pictureBox9.Image = global::FerSotf.Properties.Resources.maquina_de_facturacion;
             this.pictureBox9.Location = new System.Drawing.Point(16, 568);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox9.Size = new System.Drawing.Size(65, 43);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 17;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // Label_Factura
             // 
             this.Label_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Factura.AutoSize = false;
-            this.Label_Factura.Location = new System.Drawing.Point(73, 578);
+            this.Label_Factura.Location = new System.Drawing.Point(84, 578);
             this.Label_Factura.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Factura.Name = "Label_Factura";
-            this.Label_Factura.Size = new System.Drawing.Size(108, 33);
+            this.Label_Factura.Size = new System.Drawing.Size(98, 33);
             this.Label_Factura.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Factura.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Factura.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,9 +186,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::FerSotf.Properties.Resources.information_button;
-            this.pictureBox8.Location = new System.Drawing.Point(16, 681);
+            this.pictureBox8.Location = new System.Drawing.Point(21, 681);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox8.Size = new System.Drawing.Size(65, 43);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 15;
             this.pictureBox8.TabStop = false;
@@ -197,10 +198,10 @@
             this.Label_Acerca.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Acerca.AutoSize = false;
-            this.Label_Acerca.Location = new System.Drawing.Point(73, 691);
+            this.Label_Acerca.Location = new System.Drawing.Point(96, 691);
             this.Label_Acerca.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Acerca.Name = "Label_Acerca";
-            this.Label_Acerca.Size = new System.Drawing.Size(92, 33);
+            this.Label_Acerca.Size = new System.Drawing.Size(77, 33);
             this.Label_Acerca.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Acerca.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Acerca.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,20 +217,21 @@
             this.pictureBox7.Image = global::FerSotf.Properties.Resources.employee;
             this.pictureBox7.Location = new System.Drawing.Point(16, 629);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox7.Size = new System.Drawing.Size(65, 43);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 13;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // Label_Nomina
             // 
             this.Label_Nomina.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Nomina.AutoSize = false;
-            this.Label_Nomina.Location = new System.Drawing.Point(73, 639);
+            this.Label_Nomina.Location = new System.Drawing.Point(86, 639);
             this.Label_Nomina.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Nomina.Name = "Label_Nomina";
-            this.Label_Nomina.Size = new System.Drawing.Size(92, 33);
+            this.Label_Nomina.Size = new System.Drawing.Size(76, 33);
             this.Label_Nomina.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Nomina.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Nomina.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -244,19 +246,20 @@
             this.pictureBox6.Image = global::FerSotf.Properties.Resources.distribucion;
             this.pictureBox6.Location = new System.Drawing.Point(16, 498);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox6.Size = new System.Drawing.Size(65, 43);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // Label_Prov
             // 
             this.Label_Prov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Prov.AutoSize = false;
-            this.Label_Prov.Location = new System.Drawing.Point(73, 508);
+            this.Label_Prov.Location = new System.Drawing.Point(84, 508);
             this.Label_Prov.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Prov.Name = "Label_Prov";
-            this.Label_Prov.Size = new System.Drawing.Size(108, 33);
+            this.Label_Prov.Size = new System.Drawing.Size(101, 33);
             this.Label_Prov.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Prov.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Prov.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,33 +275,34 @@
             this.kryptonLabel1.Location = new System.Drawing.Point(21, 137);
             this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(144, 33);
+            this.kryptonLabel1.Size = new System.Drawing.Size(152, 33);
             this.kryptonLabel1.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonLabel1.TabIndex = 9;
             this.kryptonLabel1.Values.Text = "Bienvenido a Fersoft";
-             // 
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::FerSotf.Properties.Resources.dashboard;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 281);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 278);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox5.Size = new System.Drawing.Size(65, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // Label_Inicio
             // 
             this.Label_Inicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Inicio.AutoSize = false;
-            this.Label_Inicio.Location = new System.Drawing.Point(70, 291);
+            this.Label_Inicio.Location = new System.Drawing.Point(89, 291);
             this.Label_Inicio.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Inicio.Name = "Label_Inicio";
-            this.Label_Inicio.Size = new System.Drawing.Size(65, 33);
+            this.Label_Inicio.Size = new System.Drawing.Size(61, 33);
             this.Label_Inicio.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Inicio.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Inicio.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -314,24 +318,24 @@
             this.pictureBox4.Image = global::FerSotf.Properties.Resources.FullMenu;
             this.pictureBox4.Location = new System.Drawing.Point(3, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(47, 37);
+            this.pictureBox4.Size = new System.Drawing.Size(55, 37);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // pictureLogo
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pictureLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::FerSotf.Properties.Resources.Ferreteria;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(157, 131);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.pictureLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureLogo.Image = global::FerSotf.Properties.Resources.Ferreteria;
+            this.pictureLogo.Location = new System.Drawing.Point(8, 3);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(165, 131);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 5;
+            this.pictureLogo.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -340,19 +344,20 @@
             this.pictureBox2.Image = global::FerSotf.Properties.Resources.client;
             this.pictureBox2.Location = new System.Drawing.Point(16, 424);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(65, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Label_Cliente
             // 
             this.Label_Cliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Cliente.AutoSize = false;
-            this.Label_Cliente.Location = new System.Drawing.Point(70, 434);
+            this.Label_Cliente.Location = new System.Drawing.Point(84, 434);
             this.Label_Cliente.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Cliente.Name = "Label_Cliente";
-            this.Label_Cliente.Size = new System.Drawing.Size(93, 33);
+            this.Label_Cliente.Size = new System.Drawing.Size(89, 33);
             this.Label_Cliente.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Cliente.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Cliente.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -382,19 +387,20 @@
             this.pictureBox1.Image = global::FerSotf.Properties.Resources.warehouse;
             this.pictureBox1.Location = new System.Drawing.Point(12, 345);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 43);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Label_Inventario
             // 
             this.Label_Inventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Inventario.AutoSize = false;
-            this.Label_Inventario.Location = new System.Drawing.Point(69, 355);
+            this.Label_Inventario.Location = new System.Drawing.Point(80, 355);
             this.Label_Inventario.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Inventario.Name = "Label_Inventario";
-            this.Label_Inventario.Size = new System.Drawing.Size(94, 33);
+            this.Label_Inventario.Size = new System.Drawing.Size(97, 33);
             this.Label_Inventario.StateCommon.ShortText.Color1 = System.Drawing.Color.Black;
             this.Label_Inventario.StateCommon.ShortText.Color2 = System.Drawing.Color.Black;
             this.Label_Inventario.StateCommon.ShortText.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -443,9 +449,9 @@
             // kryptonPanel2
             // 
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(181, 0);
+            this.kryptonPanel2.Location = new System.Drawing.Point(189, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(937, 749);
+            this.kryptonPanel2.Size = new System.Drawing.Size(929, 749);
             this.kryptonPanel2.TabIndex = 3;
             // 
             // FormPadre
@@ -471,14 +477,14 @@
             this.Resize += new System.EventHandler(this.FormPadre_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Signalpanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -496,7 +502,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPanel Signalpanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel Label_Cliente;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureLogo;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel Label_Inicio;
@@ -510,9 +516,9 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel Label_Factura;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel Label_info;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel Label_Rol;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel infoLabel;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel RolLabel;
+        private System.Windows.Forms.PictureBox pictureExit;
     }
 }
 

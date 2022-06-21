@@ -16,5 +16,26 @@ namespace ClasesF
             MySqlConnection con = new MySqlConnection(ConfigurationManager.ConnectionStrings["db"].ConnectionString);
             return con;
         }
+       public static bool TestCon()
+        {
+        var con = GetConnection();
+        Console.WriteLine(con.ConnectionString); 
+            try {
+                con.Open();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
+                   
+            }
+            if (con.State == ConnectionState.Open)
+            {
+                return true;
+            }
+     
+            return false;
+            
+        }
     }
 }

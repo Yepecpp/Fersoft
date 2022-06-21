@@ -66,8 +66,8 @@ namespace ClasesF.Clases_Nom
             MySqlCommand cmd = Con.CreateCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "SP_JP";
-            cmd.Parameters.Add("@str", MySqlDbType.String,25).Value=id;
-            cmd.Parameters.Add("@fechai",MySqlDbType.DateTime).Value=fi;
+            cmd.Parameters.Add("str", MySqlDbType.String,25).Value=id;
+            cmd.Parameters.Add("fechai",MySqlDbType.DateTime).Value=fi;
             cmd.ExecuteNonQuery();
             cmd.Dispose();
             Con.Close();
@@ -90,10 +90,11 @@ namespace ClasesF.Clases_Nom
         }
         public static bool LogEmpleado(string l)
         {
+            if (l == "") return false;
             MySqlConnection Cond = ConnectionDB.GetConnection();
             bool ls = false;
             MySqlCommand cmd = Cond.CreateCommand();
-            cmd.CommandText = "select top 1 E.ID_E from N_Empleados E where @str = E.Cedula or CONVERT(nvarchar, E.ID_E)=@str";
+            cmd.CommandText = "select E.ID_E from N_Empleados E where @str = E.Cedula or CONVERT( E.ID_E, nchar)=@str limit 1";
             cmd.Parameters.Add("@str", MySqlDbType.String,25).Value = l;
             cmd.CommandType = CommandType.Text;
             Cond.Open();
@@ -107,24 +108,6 @@ namespace ClasesF.Clases_Nom
             Cond.Close();
             return ls;
         }
-       
-        /* if (dt.CompareTo(DateTime.Now) < 0)
-            {
-                string [] sk = hr.Split('-');
-               
-                int hori = int.Parse(sk[0]);
-                int horo = int.Parse(sk[1])<=12? int.Parse(sk[1])+12: int.Parse(sk[1]);
-                int hourd = horo-hori;
-
-                
-               Daysd = (DateTime.Now-dt).Days-((DateTime.Now - dt).Days/7);
-                Hours = (DateTime.Now-dt).Hours;
-                Hours = Hours > hori ? 
-                    Hours > horo ? (Hours - hori) - (Hours - horo) : Hours - hori 
-                    : 0;
-                NHPD = Daysd * 8;
-                Hours += hourd * Daysd;
-            }*/
         #endregion
     }
 }

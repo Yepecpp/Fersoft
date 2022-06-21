@@ -58,7 +58,7 @@ namespace ClasesF.Clases_Nom
             MySqlCommand cmd = Con.CreateCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "SP_LES";
-            cmd.Parameters.Add("@Cedula", MySqlDbType.String,25).Value = user;
+            cmd.Parameters.Add("Cedula", MySqlDbType.String,25).Value = user;
           MySqlDataReader lr = cmd.ExecuteReader();
             if (lr.Read())
             {
@@ -82,7 +82,7 @@ namespace ClasesF.Clases_Nom
             MySqlCommand cmd = Con.CreateCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "SP_US";
-            cmd.Parameters.Add("@Str", MySqlDbType.String, 25).Value = s;
+            cmd.Parameters.Add("Str", MySqlDbType.String, 25).Value = s;
           MySqlDataReader lr = cmd.ExecuteReader();
            while (lr.Read())
             {
@@ -102,8 +102,8 @@ namespace ClasesF.Clases_Nom
             MySqlCommand cmd = Con.CreateCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "SP_UU";
-            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
-            cmd.Parameters.Add("@Str", MySqlDbType.String, 250).Value = s.Length<2? s : Encrypt.GetSHA256(s);
+            cmd.Parameters.Add("id", MySqlDbType.Int32).Value = id;
+            cmd.Parameters.Add("Str", MySqlDbType.String, 250).Value = s.Length<2? s : Encrypt.GetSHA256(s);
            cmd.ExecuteNonQuery();
             Con.Close();
             return CargarUsu(id.ToString());
@@ -114,9 +114,9 @@ namespace ClasesF.Clases_Nom
             MySqlCommand cmd = Con.CreateCommand();
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "SP_IU";
-            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
-            cmd.Parameters.Add("@rol", MySqlDbType.Int16).Value = sd;
-            cmd.Parameters.Add("@pass", MySqlDbType.String, 250).Value = Encrypt.GetSHA256(s);
+            cmd.Parameters.Add("id", MySqlDbType.Int32).Value = id;
+            cmd.Parameters.Add("rol", MySqlDbType.Int16).Value = sd;
+            cmd.Parameters.Add("pass", MySqlDbType.String, 250).Value = Encrypt.GetSHA256(s);
             cmd.ExecuteNonQuery();
             Con.Close();
             return CargarUsu(id.ToString());
@@ -127,7 +127,7 @@ namespace ClasesF.Clases_Nom
             V_EmpED Lista = new V_EmpED();
             MySqlCommand cmd = Cond.CreateCommand();
             cmd.CommandText = "SP_LE";
-            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value =l;
+            cmd.Parameters.Add("id", MySqlDbType.Int32).Value =l;
             cmd.CommandType = CommandType.StoredProcedure;
             Cond.Open();
            MySqlDataReader Dr = cmd.ExecuteReader();
