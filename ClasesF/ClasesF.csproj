@@ -89,7 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases_Inv\C_Inv.cs" />
+    <Compile Include="Clases_Inv\C_Prod.cs" />
     <Compile Include="Clases_Inv\C_Prov.cs" />
     <Compile Include="Clases_Nom\C_Dep.cs" />
     <Compile Include="Clases_Nom\C_Empleados.cs" />

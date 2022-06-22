@@ -76,6 +76,7 @@ Nom.IRS,Nom.S_Neto,Nom.Estado_Pago from N_Nomina Nom inner join N_Empleados E on
 # proveedores y inventario
 Create table PI_Almacenes(
 ID_Al int auto_increment primary key,
+Id_suc int,
 Nombre nvarchar(25) not null,
 Telefono nvarchar(20),
 Ubicacion nvarchar(60),

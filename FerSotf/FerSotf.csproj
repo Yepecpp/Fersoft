@@ -255,6 +255,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ClasesF.Clases_Inv.C_Prod.datasource" />
+    <None Include="Properties\DataSources\ClasesF.Clases_Inv.C_Prov.datasource" />
     <None Include="Properties\DataSources\ClasesF.Clases_Nom.C_Dep.datasource" />
     <None Include="Properties\DataSources\ClasesF.Clases_Nom.C_Jor.datasource" />
     <None Include="Properties\DataSources\ClasesF.Clases_Nom.C_Nominas.datasource" />
