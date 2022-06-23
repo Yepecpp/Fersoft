@@ -26,7 +26,7 @@ namespace FerSotf
                 MessageBox.Show("No se pudo conectar a el servidor", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
-            LoginS("1", "2507");
+            //LoginS("1", "2507");
         }
         public bool logged { get; private set; }
         private void Button_Log_Click(object sender, EventArgs e)
