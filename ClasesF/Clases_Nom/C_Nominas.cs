@@ -171,9 +171,11 @@ namespace ClasesF.Clases_Nom
             cmd.Parameters.Add("@Fin", MySqlDbType.DateTime).Value = fout;
             List<C_Jor> Xn = new List<C_Jor>(); 
            MySqlDataReader Dr = cmd.ExecuteReader();
+            DateTime? dts = null;
             while (Dr.Read())
             {
-                Xn.Add(new C_Jor(Dr.GetDateTime(0), Dr.GetDateTime(1)));
+                dts =  Dr.IsDBNull(1) ? null : Dr.GetDateTime(1);
+                Xn.Add(new C_Jor(Dr.GetDateTime(0),dts));
             }
             Con.Close();
             Dr.Close();

@@ -126,13 +126,14 @@ end go
 drop procedure if exists SP_NomLN go
 create procedure  SP_NomLN (in id nvarchar(25),Fin datetime) begin
 declare Ln datetime default null;
- select  Ln = N.Fecha from V_N_Nomina N where convert(N.Id_E, nchar)=id or N.Cedula=id  order by N.Id_Nom desc limit 1;
+ select  Ln = N.Fecha from V_N_Nomina N where N.Id_E=id or N.Cedula=id  order by N.Id_Nom desc limit 1;
 if Ln is null then
 select  J.Entrada, J.Salida,ID_Jor from   N_Jornada J inner join  V_N_Nomina N on J.IDE=N.Id_E  where convert(N.Id_E, nchar)=id or N.Cedula=id and Salida<=Fin;
 else 
 select  J.Entrada, J.Salida,j.IDE from N_Jornada J inner join  V_N_Nomina N on J.IDE=N.Id_E  where convert(N.Id_E, nchar)=id or N.Cedula=id and Salida>=Ln and Salida<=Fin;
 end if; end
 go
+call SP_NomLN(1,'12/12/22');
 #insert 
 delimiter go
 drop procedure if exists SP_NomI go

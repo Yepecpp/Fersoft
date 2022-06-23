@@ -74,7 +74,7 @@ namespace ClasesF.Clases_Nom
         }
         #endregion
         #region hours 
-        public C_Jor(DateTime en, DateTime sal) {
+        public C_Jor(DateTime en, DateTime? sal) {
             Entrada=en;
             Salida=sal;
         }

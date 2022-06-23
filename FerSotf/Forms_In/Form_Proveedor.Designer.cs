@@ -95,7 +95,7 @@ namespace FerSotf.Forms_In
             // 
             this.MTextBox_Tel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.MTextBox_Tel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MTextBox_Tel.Location = new System.Drawing.Point(1012, 146);
+            this.MTextBox_Tel.Location = new System.Drawing.Point(535, 195);
             this.MTextBox_Tel.Name = "MTextBox_Tel";
             this.MTextBox_Tel.Size = new System.Drawing.Size(96, 23);
             this.MTextBox_Tel.TabIndex = 28;
@@ -105,7 +105,7 @@ namespace FerSotf.Forms_In
             // TBNombre
             // 
             this.TBNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TBNombre.Location = new System.Drawing.Point(102, 146);
+            this.TBNombre.Location = new System.Drawing.Point(215, 178);
             this.TBNombre.Name = "TBNombre";
             this.TBNombre.Size = new System.Drawing.Size(100, 23);
             this.TBNombre.TabIndex = 27;

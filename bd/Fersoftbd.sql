@@ -1,6 +1,6 @@
 create database Fersoft;
 use Fersoft;
-#Nomina
+#Nomina 
 Create table N_Empresas(
 ID_Emp int auto_increment primary key,
 RNC nvarchar(30),
@@ -121,8 +121,9 @@ Id_Cliente int not null,
 MontoTotal float,
 TotalItbs float,
 Fecha_emitida datetime,
-Id_E int,
-constraint FK_Facturas_Empleados foreign key (Id_E) references N_Empleados (ID_E)
+Id_U int,
+constraint FK_Facturas_Usuario foreign key (Id_U) references N_Usuarios (ID_U),
+constraint FK_Facturas_Cliente foreign key (Id_Cliente) references F_Clientes (ID_Cl)
 );
 
 Create table F_Ventas (
@@ -132,3 +133,5 @@ Id_factura int not null,
 constraint FK_Ventas_Inventario foreign key (Id_P) references PI_Inventario (Id_P),
 constraint FK_Ventas_Factura foreign key (Id_Factura) references F_Facturas (Id_F)
 );
+create or replace view V_Facturas as
+

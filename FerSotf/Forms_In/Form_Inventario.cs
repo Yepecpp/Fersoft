@@ -23,7 +23,7 @@ namespace FerSotf.Forms_In
         private void Form_Inventario_Load(object sender, EventArgs e)
         {
             var xy = C_Prov.CargarProv("0");
-            
+            CargarDT("0");
             for (int i = 0; i <xy.Count; i++)
             {
                 names.Add(xy[i].ID);
@@ -84,7 +84,11 @@ namespace FerSotf.Forms_In
 
         private void ButtonInsert_Click(object sender, EventArgs e)
         {
-            //if ()
+             if (Tb_Precio.Text == "" && TBNombre.Text == "" && TB_Marca.Text == "" && Tb_Categoria.Text == "" &&
+             CB_Prov.SelectedIndex==-1
+             ){
+                MessageBox.Show("Faltan datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             return ;}
             KDataGrid.DataSource = new C_Prod() {Prov=names[CB_Prov.SelectedIndex], Nombre=TBNombre.Text,
                 Marca=TB_Marca.Text, Categoria=Tb_Categoria.Text, Precio=float.Parse(Tb_Precio.Text), Ubi="x"
             }.InsertarProd();
@@ -92,8 +96,14 @@ namespace FerSotf.Forms_In
 
         private void ButtonUpdate_Click(object sender, EventArgs e)
         {
-
-                KDataGrid.DataSource = new C_Prod()
+        if (Tb_Precio.Text == "" || TBNombre.Text == "" && TB_Marca.Text == "" && Tb_Categoria.Text == "" &&
+             CB_Prov.SelectedIndex==-1
+             ){
+                MessageBox.Show("Faltan datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             
+             return ;}
+            if (Label_ID.Text.Length == 3) { MessageBox.Show("Falta ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return; }
+            KDataGrid.DataSource = new C_Prod()
                 {
                     Id=int.Parse(Label_ID.Text.Substring(3)),
                     Prov = names[CB_Prov.SelectedIndex],
