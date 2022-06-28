@@ -448,3 +448,4 @@ C:\Users\jhonm_000\Desktop\Fersoft\FerSotf\bin\Debug\zh-CHT\Microsoft.ReportView
 C:\Users\jhonm_000\Desktop\Fersoft\FerSotf\obj\Debug\FerSotf.csproj.CopyComplete
 C:\Users\jhonm_000\Desktop\Fersoft\FerSotf\obj\Debug\FerSotf.exe
 C:\Users\jhonm_000\Desktop\Fersoft\FerSotf\obj\Debug\FerSotf.pdb
+C:\Users\jhonm_000\Desktop\Fersoft\FerSotf\bin\Debug\FontAwesome.Sharp.dll

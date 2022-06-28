@@ -178,7 +178,7 @@ namespace FerSotf.Forms_In
             // 
             // Label_ID
             // 
-            this.Label_ID.Location = new System.Drawing.Point(96, 56);
+            this.Label_ID.Location = new System.Drawing.Point(72, 35);
             this.Label_ID.Name = "Label_ID";
             this.Label_ID.Size = new System.Drawing.Size(25, 20);
             this.Label_ID.TabIndex = 35;
@@ -219,6 +219,7 @@ namespace FerSotf.Forms_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(956, 556);
             this.Controls.Add(this.TextBox_Select);
             this.Controls.Add(this.Tb_Categoria);

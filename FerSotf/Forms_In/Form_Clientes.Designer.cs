@@ -51,6 +51,13 @@ namespace FerSotf.Forms_In
             this.MTextBox_Tel = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.Tb_Ubi = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.Tb_Email = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.KDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cClBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -86,11 +93,11 @@ namespace FerSotf.Forms_In
             this.KDataGrid.DataSource = this.cClBindingSource;
             this.KDataGrid.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.KDataGrid.HideOuterBorders = true;
-            this.KDataGrid.Location = new System.Drawing.Point(0, 276);
+            this.KDataGrid.Location = new System.Drawing.Point(0, 285);
             this.KDataGrid.Name = "KDataGrid";
             this.KDataGrid.ReadOnly = true;
             this.KDataGrid.RowHeadersVisible = false;
-            this.KDataGrid.Size = new System.Drawing.Size(800, 202);
+            this.KDataGrid.Size = new System.Drawing.Size(800, 193);
             this.KDataGrid.TabIndex = 45;
             this.KDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KDataGrid_CellClick);
             // 
@@ -179,7 +186,7 @@ namespace FerSotf.Forms_In
             // Tb_Apellido
             // 
             this.Tb_Apellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Tb_Apellido.Location = new System.Drawing.Point(295, 103);
+            this.Tb_Apellido.Location = new System.Drawing.Point(180, 100);
             this.Tb_Apellido.Name = "Tb_Apellido";
             this.Tb_Apellido.Size = new System.Drawing.Size(100, 23);
             this.Tb_Apellido.TabIndex = 51;
@@ -188,7 +195,7 @@ namespace FerSotf.Forms_In
             // TB_Cedula
             // 
             this.TB_Cedula.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TB_Cedula.Location = new System.Drawing.Point(60, 188);
+            this.TB_Cedula.Location = new System.Drawing.Point(33, 185);
             this.TB_Cedula.Name = "TB_Cedula";
             this.TB_Cedula.Size = new System.Drawing.Size(100, 23);
             this.TB_Cedula.TabIndex = 49;
@@ -197,7 +204,7 @@ namespace FerSotf.Forms_In
             // Tb_RNC
             // 
             this.Tb_RNC.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Tb_RNC.Location = new System.Drawing.Point(295, 188);
+            this.Tb_RNC.Location = new System.Drawing.Point(180, 185);
             this.Tb_RNC.Name = "Tb_RNC";
             this.Tb_RNC.Size = new System.Drawing.Size(100, 23);
             this.Tb_RNC.TabIndex = 48;
@@ -206,11 +213,10 @@ namespace FerSotf.Forms_In
             // TBNombre
             // 
             this.TBNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TBNombre.Location = new System.Drawing.Point(60, 103);
+            this.TBNombre.Location = new System.Drawing.Point(33, 100);
             this.TBNombre.Name = "TBNombre";
             this.TBNombre.Size = new System.Drawing.Size(100, 23);
             this.TBNombre.TabIndex = 47;
-            this.TBNombre.Text = "Nombre";
             // 
             // Label_ID
             // 
@@ -224,7 +230,7 @@ namespace FerSotf.Forms_In
             // 
             this.MTextBox_Tel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.MTextBox_Tel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MTextBox_Tel.Location = new System.Drawing.Point(540, 103);
+            this.MTextBox_Tel.Location = new System.Drawing.Point(329, 100);
             this.MTextBox_Tel.Name = "MTextBox_Tel";
             this.MTextBox_Tel.Size = new System.Drawing.Size(96, 23);
             this.MTextBox_Tel.TabIndex = 52;
@@ -234,7 +240,7 @@ namespace FerSotf.Forms_In
             // Tb_Ubi
             // 
             this.Tb_Ubi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Tb_Ubi.Location = new System.Drawing.Point(671, 116);
+            this.Tb_Ubi.Location = new System.Drawing.Point(457, 110);
             this.Tb_Ubi.Multiline = true;
             this.Tb_Ubi.Name = "Tb_Ubi";
             this.Tb_Ubi.Size = new System.Drawing.Size(100, 81);
@@ -244,17 +250,88 @@ namespace FerSotf.Forms_In
             // Tb_Email
             // 
             this.Tb_Email.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Tb_Email.Location = new System.Drawing.Point(536, 188);
+            this.Tb_Email.Location = new System.Drawing.Point(325, 185);
             this.Tb_Email.Name = "Tb_Email";
             this.Tb_Email.Size = new System.Drawing.Size(100, 23);
             this.Tb_Email.TabIndex = 54;
             this.Tb_Email.Text = "Email";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Nombre";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(177, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 56;
+            this.label2.Text = "Nombre";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(177, 169);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Nombre";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(30, 169);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Nombre";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(326, 84);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Nombre";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(322, 169);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Nombre";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(454, 94);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 61;
+            this.label7.Text = "Nombre";
+            // 
             // Form_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(800, 478);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Tb_Email);
             this.Controls.Add(this.Tb_Ubi);
             this.Controls.Add(this.MTextBox_Tel);
@@ -301,5 +378,12 @@ namespace FerSotf.Forms_In
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_Ubi;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox Tb_Email;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

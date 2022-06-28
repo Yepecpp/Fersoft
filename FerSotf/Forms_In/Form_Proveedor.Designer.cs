@@ -198,6 +198,7 @@ namespace FerSotf.Forms_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1386, 573);
             this.Controls.Add(this.KDataGrid);
             this.Controls.Add(this.TB_Ag);

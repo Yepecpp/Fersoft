@@ -18,5 +18,10 @@ namespace FerSotf.Forms_In
         {
             InitializeComponent();
         }
+
+        private void Form_Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
