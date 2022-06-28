@@ -130,8 +130,7 @@ Create table F_Ventas (
 Id_P int not null, 
 Total_V int, 
 Id_factura int not null,
-constraint FK_Ventas_Inventario foreign key (Id_P) references PI_Inventario (Id_P),
+constraint FK_Ventas_Inventario foreign key (Id_P) references PI_productos (Id_P),
 constraint FK_Ventas_Factura foreign key (Id_Factura) references F_Facturas (Id_F)
 );
-create or replace view V_Facturas as
 
